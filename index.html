@@ -42,7 +42,8 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open" js-open-menu>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
           <svg class="mobile-menu-icon" width="30" height="19">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
@@ -63,57 +64,61 @@
         </address>
       </div>
 
-      <div class="mobile-menu-conteiner" js-menu-container>
-        <button type="button" class="menu-close" js-close-menu>
-          <svg class="icon-close" width="8" height="8">
-            <use href="./images/icons.svg#icon-close-icon"></use>
-          </svg>
-        </button>
-        <ul class="mobile-nav-list">
-          <li class="mobile-item">
-            <a href="./index.html" class="mobile-link link">Studio</a>
-          </li>
-          <li class="mobile-item">
-            <a href="./portfolio.html" class="mobile-link link">Portfolio</a>
-          </li>
-          <li class="mobile-item">
-            <a href="" class="mobile-link link">Contacts</a>
-          </li>
-        </ul>
+      <div class="mobile-menu-conteiner" data-menu>
         <div>
-          <a class="menu-mail link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="menu-tell link" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
+          <button type="button" class="menu-close" data-menu-close>
+            <svg class="icon-close">
+              <use href="./images/icons.svg#icon-close-icon"></use>
+            </svg>
+          </button>
+          <ul class="mobile-nav-list list">
+            <li class="mobile-item">
+              <a href="./index.html" class="mobile-link link">Studio</a>
+            </li>
+            <li class="mobile-item">
+              <a href="./portfolio.html" class="mobile-link link">Portfolio</a>
+            </li>
+            <li class="mobile-item">
+              <a href="" class="mobile-link link">Contacts</a>
+            </li>
+          </ul>
+          <div class="menu-wrap-mail-tell">
+            <a class="menu-tell link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+            <a class="menu-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
         </div>
-        <ul>
-          <li class="menu-soc-item">
-            <a href="" class="menu-soc-link link"
-              ><svg class="menu-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-instagram"></use></svg
-            ></a>
-          </li>
-          <li class="menu-soc-item">
-            <a href="" class="menu-soc-link link"
-              ><svg class="menu-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-twitter"></use></svg
-            ></a>
-          </li>
-          <li class="menu-soc-item">
-            <a href="" class="menu-soc-link link"
-              ><svg class="menu-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-facebook"></use></svg
-            ></a>
-          </li>
-          <li class="menu-soc-item">
-            <a href="" class="menu-soc-link link"
-              ><svg class="menu-soc-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-linkedin"></use></svg
-            ></a>
-          </li>
-        </ul>
+        <div>
+          <ul class="menu-soc-list list">
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link link"
+                ><svg class="menu-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link link"
+                ><svg class="menu-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link link"
+                ><svg class="menu-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="menu-soc-item">
+              <a href="" class="menu-soc-link link"
+                ><svg class="menu-soc-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">

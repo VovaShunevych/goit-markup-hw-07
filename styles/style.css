@@ -143,6 +143,7 @@ body {
 .header-list {
   display: none;
 }
+
 .mobile-menu-open {
   border: none;
   background-color: transparent;
@@ -167,14 +168,18 @@ body {
   left: 0;
   height: 100%;
   z-index: 1;
+
   background-color: #ffffff;
-  padding: 80px 40px 40px 40px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-bottom: 40px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity var(--main-header-hover-focus-transition);
 }
-.mobile-menu-conteiner.is-open {
+
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -216,14 +221,49 @@ body {
   color: var(--main-sabtitle-color);
   transition: color var(--main-header-hover-focus-transition);
 }
-
+.menu-wrap-mail-tell {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 48px;
+}
 .menu-mail {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(24 / 20);
+
+  letter-spacing: 0.02em;
+
+  color: #434455;
 }
 .menu-tell {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(36 / 24);
+
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+
+  color: #4d5ae5;
+}
+.menu-soc-list {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
 }
 .menu-soc-item {
+  width: 40px;
+  height: 40px;
 }
 .menu-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-team-soc-link-background-color, #4d5ae5);
+  transition: background var(--main-team-soc-hover-transition);
 }
 .menu-soc-icon {
 }
@@ -312,19 +352,26 @@ body {
 .feature-icon {
   display: none;
 }
+.fichers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
 
 .fichers-item {
-  margin-bottom: 72px;
 }
+
 .fichers-sabtitle {
   font-weight: 700;
-  font-size: 20px;
-  line-height: calc(24 / 20);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: var(--main-sabtitle-color, #2e2f42);
   margin-bottom: 8px;
-  text-align: center;
 }
+
 .fichers-text {
   font-weight: 500;
   font-size: 16px;
@@ -735,7 +782,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 408px;
+  width: 300px;
   min-height: 576px;
   background: var(--main-modal-background, #fcfcfc);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),

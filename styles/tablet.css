@@ -35,7 +35,7 @@
     background: #404bbf;
     border-radius: 2px;
     position: relative;
-    top: 90%;
+    top: 100%;
   }
   .header-line-portfolio {
   }
@@ -46,44 +46,38 @@
     background: #404bbf;
     border-radius: 2px;
     position: relative;
-    top: 90%;
+    top: 100%;
   }
 
   .header-address {
     display: flex;
   }
   .header-address-list {
-    gap: 12px;
+    gap: 2px;
     display: flex;
     flex-direction: column;
   }
 
-  .header-mail {
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    letter-spacing: 0.02em;
-    color: var(--main-header-mail-color, #434455);
-    font-style: normal;
-    transition: color var(--main-header-hover-focus-transition);
-  }
-  .header-mail:is(:hover, :focus) {
-    color: var(--main-header-mail-hover-color, #4d5ae5);
-  }
-  .header-tell {
-    font-size: 16px;
-    line-height: calc(24 / 16);
-    letter-spacing: 0.02em;
-    color: var(--main-header-tell-color, #434455);
-    font-style: normal;
-    transition: color var(--main-header-hover-focus-transition);
-  }
-  .header-tell:is(:hover, :focus) {
-    color: var(--main-header-tell-hover-color, #4d5ae5);
-  }
   .mobile-menu-open {
     display: block;
     display: none;
   }
+  .header-mail {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
+    color: var(--main-header-mail-color, #434455);
+    font-style: normal;
+  }
+
+  .header-tell {
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    letter-spacing: 0.04em;
+    color: var(--main-header-tell-color, #434455);
+    font-style: normal;
+  }
+
   /* -------------------------Section HEDER ----------------------------------------- */
 
   /* -------------------------Section HERO ----------------------------------------- */
@@ -110,10 +104,14 @@
   }
   .fichers-list {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    justify-content: center;
   }
   .fichers-item {
-    width: calc((100%-24px) / 2);
+    width: calc(100% / 2 - 24px);
   }
   .fichers-sabtitle {
     text-align: left;
@@ -126,7 +124,10 @@
     padding-bottom: 96px;
     padding-top: 96px;
   }
-
+  .team-title-list {
+    row-gap: 24px;
+    column-gap: 64px;
+  }
   /* -------------------------Section Team ----------------------------------------- */
   /* -------------------------Section Customers ----------------------------------------- */
   .customers-list {
@@ -140,7 +141,7 @@
   }
 
   .customers-item {
-    width: calc((100%-48px) / 4);
+    width: ((100%-48px)/3);
     height: 88px;
   }
   .castomers-link {
@@ -172,11 +173,12 @@
   .wrap-footer-social {
     text-align: start;
     margin-bottom: 0;
+    align-items: start;
   }
   .wrap-footer-form {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: start;
     width: auto;
   }
   .footer-input-wraper {
