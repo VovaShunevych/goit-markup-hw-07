@@ -6,6 +6,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .menu-soc-list {
+    display: flex;
+    gap: 36px;
+  }
+
   .menu-tell {
     font-weight: 700;
     font-size: 36px;
